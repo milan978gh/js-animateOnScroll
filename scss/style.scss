@@ -1,5 +1,7 @@
-
-
+$ff-primary: serif;
+$ff-secondary: sans-serif;
+$color: #222;
+$bGround: #d8d8d8;
 
 * {
 	margin: 0;
@@ -7,4 +9,44 @@
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: $ff-secondary;
+	background: $bGround;
+	color: $color;
+	// line-height: 1.5;
+
+	img {
+		display: block;
+		width: 100%;
+	}
+	h1 {
+		font-family: $ff-primary;
+	}
+	.section {
+		height: 100vh;
+
+		.header {
+			height: 20vh;
+
+      .nav{
+        width: max-content;
+        line-height: 15vh;
+        margin: 0 auto;
+      }
+			.links {
+        display: flex;
+        
+        li{
+          margin: 1rem 2rem;
+        }
+			}
+		}
+		.title {
+		}
+		.center {
+			display: flex;
+		}
+	}
 }
