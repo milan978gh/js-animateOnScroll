@@ -1,7 +1,7 @@
 $ff-primary: serif;
 $ff-secondary: sans-serif;
 $color: #222;
-$bGround: #d8d8d8;
+$bGround: #eaf8de;
 
 * {
 	margin: 0;
@@ -15,7 +15,6 @@ body {
 	font-family: $ff-secondary;
 	background: $bGround;
 	color: $color;
-	line-height: 1.5;
 
 	img {
 		display: block;
@@ -26,8 +25,8 @@ body {
 		font-family: $ff-primary;
 	}
 	.section {
-    height: 70vh;
-    border-bottom: 1px solid #bbbbbb;
+		height: 70vh;
+		border-bottom: 1px solid #bbbbbb;
 
 		.header {
 			height: 10vh;
@@ -53,37 +52,46 @@ body {
 		}
 		.center {
 			display: flex;
+			flex-direction: column;
 			width: 95vw;
 			height: 100%;
 			margin: auto;
 
 			.left-container {
-				display: flex;
-				align-items: center;
 				margin: auto;
-        padding: 0.5rem;
-        opacity: 0;
+				// margin-right: 5px;
+				opacity: 0;
 
 				&.ani-mation {
 					animation: enteringLeft 3s linear forwards;
 				}
 			}
 			.right-container {
-				display: flex;
-				align-items: center;
+				font-size: 180%;
+				text-align: center;
 				margin: auto;
-        padding: 0.5rem;
-        opacity: 0;
+				// margin-left: 5px;
+				opacity: 0;
 
 				&.ani-mation {
-          animation: enteringRight 1.2s linear 1.8s forwards;
+					animation: enteringRight 1.2s linear 1.2s forwards;
 				}
 			}
 		}
+	}
+	.section-end {
+		height: 50vh;
+
+		.title {
+			height: 40vh;
+			text-align: center;
+			display: grid;
+			place-items: center;
+		}
 		.footer {
-			height: 10vh;
-			width: max-content;
-			line-height: 10vh;
+			height: max-content;
+			width: fit-content;
+			text-align: center;
 			margin: 0 auto;
 		}
 	}
@@ -91,11 +99,11 @@ body {
 
 @keyframes enteringLeft {
 	from {
-		transform: translateX(-300px);
+		// transform: translateX(-300px);
 		opacity: 0;
 	}
 	to {
-		transform: translateX(0px);
+		// transform: translateX(0px);
 		opacity: 1;
 	}
 }
