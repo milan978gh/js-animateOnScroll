@@ -74,7 +74,7 @@ body {
 				opacity: 0;
 
 				&.ani-mation {
-					animation: enteringRight 1.2s linear 1.2s forwards;
+					animation: enteringRight 1.2s linear 1.8s forwards;
 				}
 			}
 		}
@@ -99,18 +99,18 @@ body {
 
 @keyframes enteringLeft {
 	from {
-		// transform: translateX(-300px);
+		transform: translateY(-100%);
 		opacity: 0;
 	}
 	to {
-		// transform: translateX(0px);
+		transform: translateY(0px);
 		opacity: 1;
 	}
 }
 
 @keyframes enteringRight {
 	from {
-		transform: translateX(300px);
+		transform: translateX(100%);
 		opacity: 0;
 	}
 	to {
